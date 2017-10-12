@@ -1,0 +1,18 @@
+html {
+  font-family: "Fredoka One", cursive;
+}
+
+h1 {
+  color: #990073;
+}
+
+p {
+  color: #c09;
+  max-width: 18em;
+}
+
+.btn-ghost {
+  color: #c09;
+  border-color: #c09;
+  padding: .5em;
+}
