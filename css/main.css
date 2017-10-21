@@ -2,17 +2,22 @@ html {
   font-family: "Fredoka One", sans-serif;
 }
 
+
+.banner {
+  background-image: repeating-linear-gradient(145deg, #d4fdff 10px, #d4fdff 20px, #c9fcff 20px, #c9fcff 30px);
+  min-height: 500px;
+}
 h1 {
   color: #990073;
   transform: rotate(-8deg);
-  transform-origin: left bottom;
+  transform-origin: left center;
 }
 
 p {
   color: #c09;
   transform: rotate(-5deg);
   max-width: 19em;
-  transform-origin: left bottom;
+  transform-origin: left center;
 }
 
 .btn-ghost {
@@ -22,4 +27,13 @@ p {
 
 .btn-ghost:hover {
   background-color: rgba(153, 0, 115, 0.5);
+}
+
+.banner {
+max-height: 100%;
+}
+
+.text {
+  transform: translateY(40%);
+  bottom: -50%;
 }
