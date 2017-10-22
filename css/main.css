@@ -36,18 +36,20 @@ p {
   transform: translateY(40%);
   bottom: -50%;
   text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+  opacity: 0;
+  animation: text-display 500ms linear forwards;
 }
 
 .cone {
   transform: translate(40%, 170%);
   width: 180px;
-  animation: cone-drop 250ms linear;
+  animation: cone-drop 250ms linear forwards;
 }
 
 .mint {
   transform: translate(40%, 111%);
   width: 180px;
-  animation: mint-drop 250ms 200ms linear;
+  animation: mint-drop 250ms 200ms linear forwards;
 }
 
 .chocolate {
@@ -128,4 +130,18 @@ p {
   to {
     transform: translate(40%, 170%);
   }
+}
+
+@keyframes text-display {
+
+  from {
+    opacity: 0;
+    filter: blur 50px;
+  }
+
+  to {
+  opacity: 1;
+  filter: blur(0);
+  }
+
 }
