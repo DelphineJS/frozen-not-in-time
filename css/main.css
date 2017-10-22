@@ -43,13 +43,13 @@ p {
 .cone {
   transform: translate(40%, 170%);
   width: 180px;
-  animation: cone-drop 250ms linear forwards;
+  animation: cone-drop 250ms 200ms linear forwards;
 }
 
 .mint {
   transform: translate(40%, 111%);
   width: 180px;
-  animation: mint-drop 250ms 200ms linear forwards;
+  animation: mint-drop 250ms 300ms linear forwards;
 }
 
 .chocolate {
