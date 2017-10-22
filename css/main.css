@@ -5,6 +5,7 @@ html {
 .banner {
   background-image: repeating-linear-gradient(145deg, #d4fdff 10px, #d4fdff 20px, #c9fcff 20px, #c9fcff 30px);
   min-height: 500px;
+  border-top: #b3fbff 10px solid;
 }
 
 h1 {
@@ -34,33 +35,97 @@ p {
 .text {
   transform: translateY(40%);
   bottom: -50%;
-  text-shadow: 2px 2px 8px rgba(153, 0, 115, 0.5);
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
 }
 
 .cone {
   transform: translate(40%, 170%);
   width: 180px;
+  animation: cone-drop 250ms linear;
 }
 
 .mint {
   transform: translate(40%, 111%);
   width: 180px;
+  animation: mint-drop 250ms 200ms linear;
 }
 
 .chocolate {
-  transform: translate(45%, 65%);
+  transform: translate(45%, -200%);
   width: 180px;
   z-index: 2;
+  animation: chocolate-drop 250ms 400ms linear forwards;
 }
 
 .vanilla {
-  transform: translate(40%, 23%);
+  transform: translate(40%, -100%);
   width: 180px;
   z-index: 3;
+  animation: vanilla-drop 250ms 600ms linear forwards;
 }
 
 .cherry {
-  transform: translate(40%, -20%);
+  transform: translate(40%, -100%);
   width: 180px;
   z-index: 1000;
+  animation: cherry-drop 250ms 800ms linear forwards;
+}
+
+@keyframes mint-drop {
+
+  0% {
+    transform: translate(40%, -200%);
+  }
+
+  100% {
+    transform: translate(40%, 111%);
+  }
+
+}
+
+@keyframes chocolate-drop {
+
+  0% {
+    transform: translate(40%, -200%);
+  }
+
+  100% {
+    transform: translate(45%, 65%);
+  }
+
+}
+
+@keyframes cherry-drop {
+
+  0% {
+    transform: translate(40%, -100%);
+  }
+
+  100% {
+    transform: translate(40%, -20%);
+  }
+
+}
+
+@keyframes vanilla-drop {
+
+  0% {
+    transform: translate(40%, -100%);
+  }
+
+  100% {
+    transform: translate(40%, 23%);
+  }
+
+}
+
+@keyframes cone-drop {
+
+  from {
+    transform: translate(40%, -100%);
+  }
+
+  to {
+    transform: translate(40%, 170%);
+  }
 }
