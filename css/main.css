@@ -136,7 +136,7 @@ p {
 
   from {
     opacity: 0;
-    filter: blur 50px;
+    filter: blur(30px);
   }
 
   to {
